@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ShieldCheck, ArrowRight, Heart } from 'lucide-react';
+import { Mail, MapPin, ShieldCheck, ArrowRight } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -10,22 +10,18 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-4 space-y-5">
             <a href="#" className="inline-block">
               <img
-                src="/assets/medisync-logo-full.png"
+                src="/assets/medisync-logo-white.png"
                 alt="MediSync Solution"
-                className="h-10 sm:h-12 w-auto object-contain brightness-0 invert"
+                className="h-10 sm:h-12 w-auto object-contain"
               />
             </a>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">
               Digital growth infrastructure built exclusively for doctors, clinics, and healthcare practices — helping you get found, get trusted, and fill your appointment calendar.
             </p>
-            <div className="space-y-2 text-xs text-slate-300">
-              <a href="tel:+18005551234" className="flex items-center gap-2 hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-brandRed" />
-                <span>(800) 555-1234</span>
-              </a>
-              <a href="mailto:hello@medisyncsolution.com" className="flex items-center gap-2 hover:text-white transition-colors">
+            <div className="space-y-2.5 text-xs text-slate-300">
+              <a href="mailto:medisyncsolution@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="w-4 h-4 text-brandRed" />
-                <span>hello@medisyncsolution.com</span>
+                <span>medisyncsolution@gmail.com</span>
               </a>
               <div className="flex items-center gap-2 text-slate-400">
                 <MapPin className="w-4 h-4 text-brandRed" />

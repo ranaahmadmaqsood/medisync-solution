@@ -126,7 +126,7 @@ export const FaqSection: React.FC = () => {
 
           {filteredFaqs.length === 0 && (
             <div className="text-center py-10 text-sm text-slate-400">
-              No questions found matching "{searchQuery}". Email us directly at hello@medisyncsolution.com!
+              No questions found matching "{searchQuery}". Email us directly at medisyncsolution@gmail.com!
             </div>
           )}
         </div>

@@ -2,17 +2,16 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Sparkles, ShieldCheck, CheckCircle2, ArrowRight, ExternalLink, 
-  FileText, Clock, Zap, Phone, Mail, Award, Lock
+  FileText, Clock, Zap, Mail, Award, Lock
 } from 'lucide-react';
 
-// You can customize this link to your exact Google Form URL
-const GOOGLE_FORMS_URL = "https://docs.google.com/forms/d/e/1FAIpQLSc_EXAMPLE_MEDISYNC/viewform";
+const GOOGLE_FORMS_URL = "https://forms.gle/8kTEDHQWuPZzixrd6";
 
 export const AuditForm: React.FC = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText("hello@medisyncsolution.com");
+    navigator.clipboard.writeText("medisyncsolution@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
   };
@@ -160,16 +159,16 @@ export const AuditForm: React.FC = () => {
                   <span>Hosted securely on Google Forms</span>
                 </div>
 
-                {/* Direct Concierge Contact Option */}
+                {/* Direct Consultation Contact Option */}
                 <div className="mt-6 pt-5 border-t border-white/10 w-full flex flex-col gap-2 text-xs">
-                  <div className="text-slate-400 font-medium">Or prefer direct doctor consultation?</div>
-                  <div className="flex items-center justify-center gap-4 text-white font-semibold">
-                    <a href="tel:+18005551234" className="hover:text-[#D62828] transition-colors flex items-center gap-1">
-                      <Phone className="w-3 h-3 text-[#D62828]" /> (800) 555-1234
+                  <div className="text-slate-400 font-medium">Prefer direct consultation?</div>
+                  <div className="flex items-center justify-center gap-3 text-white font-semibold">
+                    <a href="mailto:medisyncsolution@gmail.com" className="hover:text-[#D62828] transition-colors flex items-center gap-1.5">
+                      <Mail className="w-3.5 h-3.5 text-[#D62828]" /> medisyncsolution@gmail.com
                     </a>
                     <span>•</span>
-                    <button onClick={handleCopy} className="hover:text-[#D62828] transition-colors flex items-center gap-1 cursor-pointer">
-                      <Mail className="w-3 h-3 text-[#D62828]" /> {copied ? 'Copied Email! ✓' : 'hello@medisyncsolution.com'}
+                    <button onClick={handleCopy} className="text-slate-300 hover:text-white transition-colors flex items-center gap-1 cursor-pointer text-[11px] underline">
+                      {copied ? 'Copied Email! ✓' : 'Copy'}
                     </button>
                   </div>
                 </div>
